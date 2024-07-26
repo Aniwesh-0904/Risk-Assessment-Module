@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+# /.pnp
+# .pnp.js
 
 # testing
 /coverage
@@ -24,10 +24,3 @@ yarn-error.log*
 
 
 # Ignore specific files
-/package.json
-/package-lock.json
-/README.md
-
-package.json
-package-lock.json
-README.md
