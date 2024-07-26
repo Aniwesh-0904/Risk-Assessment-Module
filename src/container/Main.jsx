@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import sampleImage from '../image/loan.jpg'; // Make sure to replace with your actual image path
+// import sampleImage from '../image/loan.jpg'; // Make sure to replace with your actual image path
 import "../container/main.css"
 const Main = () => {
     const navigate = useNavigate();

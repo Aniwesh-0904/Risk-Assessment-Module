@@ -1,13 +1,18 @@
 import React from 'react'
+// import Main_panel from '../container/Main_panel';
 import { useNavigate } from 'react-router-dom';
 import "../container/login.css"
+// import { useAuth0 } from "@auth0/auth0-react";
 const Login = () => {
   const navigate = useNavigate();
 
-
+  // const { loginWithRedirect } = useAuth0();
   const navigateToSignUp = () => {
     navigate('/signin');
   }
+  function handleSignIn  ()  {
+   navigate("/mainpanel")
+  };
   return (
     <div>
       <main className="main-section">
@@ -23,7 +28,7 @@ const Login = () => {
           </div>
           <span className="forgot-password">Forgot your password?</span>
           <br />
-          <button type="submit" className="sign-in-button">Sign In</button>
+          <button  onClick= {handleSignIn} type="submit" className="sign-in-button">Sign In</button>
           <br />
           <span className="register-link" onClick={navigateToSignUp}>Register</span>
         </form>
